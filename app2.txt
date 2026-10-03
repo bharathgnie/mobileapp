@@ -1,0 +1,35 @@
+package com.example.hellobca
+
+import android.os.Bundle
+import androidx.activity.ComponentActivity
+import androidx.activity.compose.setContent
+import androidx.compose.foundation.layout.Column
+import androidx.compose.foundation.layout.padding
+import androidx.compose.material3.Text
+import androidx.compose.runtime.Composable
+import androidx.compose.ui.Modifier
+import androidx.compose.ui.unit.dp
+
+class MainActivity : ComponentActivity() {
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        setContent {
+            HelloBCA()
+        }
+    }
+}
+
+@Composable
+fun HelloBCA() {
+
+    Column(
+        modifier = Modifier.padding(30.dp)
+    ) {
+
+        Text("Hello BCA Students!")
+
+        Text("Welcome to Mobile App Development")
+    }
+}
